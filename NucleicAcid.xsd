@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="NucleicAcid">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Channel" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TesterName" type="xs:string" />
+                            <xs:element name="Assistant" type="xs:string" />
+                            <xs:element name="Tube" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="testres" type="xs:string" />
+                                        <xs:element name="date">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="hour" type="xs:string" />
+                                                    <xs:element name="day" type="xs:string" />
+                                                    <xs:element name="month" type="xs:string" />
+                                                    <xs:element name="year" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="participant" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Name" type="xs:string" />
+                                                    <xs:element name="IdNum" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

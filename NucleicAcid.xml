@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="NucleicAcid.xsl" type="text/xsl"?>
+
+<NucleicAcid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="NucleicAcid.xsd">
+    <!-- 校园大筛多个通道-->
+    <Channel id = "001">
+        <!-- 每个通道负责检测的Tester和辅助工作的Assistant比如扫码之类工作-->
+        <TesterName>John Adams</TesterName>
+        <Assistant>Justin Bob</Assistant>
+        <!-- 每个通道会有很多检测管-->
+        <Tube id ="001">
+            <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <testres>negative</testres>
+            <date>
+                <hour>12</hour>
+                <day>23</day>
+                <month>11</month>
+                <year>2022</year>
+            </date>
+            <participant>
+                <Name>Chad Rose</Name>
+                <IdNum>3020244337</IdNum>
+            </participant>
+            <participant>
+                <Name>Chad Peter</Name>
+                <IdNum>3020244338</IdNum>
+            </participant>
+            <participant>
+                <Name>Stepen Rose</Name>
+                <IdNum>3020244339</IdNum>
+            </participant>
+            <participant>
+                <Name>Paul Harden</Name>
+                <IdNum>3020244340</IdNum>
+            </participant>
+            <participant>
+                <Name>Shawn Peter</Name>
+                <IdNum>3020244341</IdNum>
+            </participant>
+        </Tube>
+
+        <Tube id ="002">
+            <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <testres>negative</testres>
+            <date>
+                <hour>5</hour>
+                <day>1</day>
+                <month>12</month>
+                <year>2022</year>
+            </date>
+            <participant>
+                <Name>Chad Rose</Name>
+                <IdNum>3020244337</IdNum>
+            </participant>
+            <participant>
+                <Name>Chad Peter</Name>
+                <IdNum>3020244338</IdNum>
+            </participant>
+            <participant>
+                <Name>Stepen Rose</Name>
+                <IdNum>3020244339</IdNum>
+            </participant>
+            <participant>
+                <Name>Paul Harden</Name>
+                <IdNum>3020244340</IdNum>
+            </participant>
+            <participant>
+                <Name>Shawn Peter</Name>
+                <IdNum>3020244341</IdNum>
+            </participant>
+        </Tube>
+    </Channel>
+
+    <Channel id = "002">
+        <!-- 每个通道负责检测的Tester和辅助工作的Assistant比如扫码之类工作-->
+        <TesterName>Crsitina Cooker</TesterName>
+        <Assistant>Leo Messi</Assistant>
+        <!-- 每个通道会有很多检测管-->
+        <Tube id ="001">
+            <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <testres>positive</testres>
+            <date>
+                <hour>02</hour>
+                <day>30</day>
+                <month>10</month>
+                <year>2021</year>
+            </date>
+            <participant>
+                <Name>Leonardo DiCaprio</Name>
+                <IdNum>3020244350</IdNum>
+            </participant>
+            <participant>
+                <Name>Willard Smith</Name>
+                <IdNum>3020244351</IdNum>
+            </participant>
+            <participant>
+                <Name>Stepen Rose</Name>
+                <IdNum>3020244352</IdNum>
+            </participant>
+            <participant>
+                <Name>Jason Michael</Name>
+                <IdNum>3020244353</IdNum>
+            </participant>
+            <participant>
+                <Name>Tom Cruise</Name>
+                <IdNum>3020244354</IdNum>
+            </participant>
+        </Tube>
+    </Channel>
+
+</NucleicAcid>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="COVID-test.xsl"?>
+
+<COVID-test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="COVID-Test.xsd">
+    <date>
+        <year>
+            2022
+        </year>
+        <month>
+            11
+        </month>
+        <day>
+            20
+        </day>
+        <hour>
+            18
+        </hour>
+    </date>
+
+    <test-tube >
+        <id>
+            1001
+        </id>
+        <capacity>
+            8
+        </capacity>
+
+        <test-result>
+            阴性
+        </test-result>
+        <person>
+            <first-name>
+                Phil
+            </first-name>
+            <last-name>
+                Foden
+            </last-name>
+            <ID-number>
+                100000 0000 00 00 0020
+            </ID-number>
+        </person>
+        <person>
+
+            <first-name>
+                Harry
+            </first-name>
+            <last-name>
+                Kane
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0009
+            </ID-number>
+        </person>
+        <person>
+
+            <first-name>
+                Harry
+            </first-name>
+            <last-name>
+                Maguire
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0006
+            </ID-number>
+        </person>
+        <person>
+
+            <first-name>
+                Marcus
+            </first-name>
+            <last-name>
+                Rashford
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0011
+            </ID-number>
+        </person>
+
+        <person>
+
+            <first-name>
+                Raheem
+            </first-name>
+            <last-name>
+                Sterling
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0006
+            </ID-number>
+        </person>
+
+        <person>
+
+            <first-name>
+                Bukayo
+            </first-name>
+            <last-name>
+                Saka
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0017
+            </ID-number>
+        </person>
+        <person>
+
+            <first-name>
+                Jude
+            </first-name>
+            <last-name>
+                Bellingham
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0022
+            </ID-number>
+        </person>
+        <person>
+
+            <first-name>
+                Mason
+            </first-name>
+            <last-name>
+                Mount
+            </last-name>
+
+            <ID-number>
+                100000 0000 00 00 0019
+            </ID-number>
+        </person>
+    </test-tube>
+
+    <test-tube >
+        <id>
+            1002
+        </id>
+        <capacity>
+            2
+        </capacity>
+        <test-result>
+            阳性
+        </test-result>
+        <person>
+            <first-name>
+                Declan
+            </first-name>
+            <last-name>
+                Rice
+            </last-name>
+            <ID-number>
+                100000 0000 00 00 0004
+            </ID-number>
+        </person>
+        <person>
+            <first-name>
+                Jack
+            </first-name>
+            <last-name>
+                Grealish
+            </last-name>
+            <ID-number>
+                100000 0000 00 00 0007
+            </ID-number>
+        </person>
+    </test-tube>
+</COVID-test>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- definition of simple elements -->
+    <xs:element name="year" type="xs:string"/>
+    <xs:element name="month" type="xs:string"/>
+    <xs:element name="day" type="xs:string"/>
+    <xs:element name="hour" type="xs:string"/>
+
+    <xs:element name="first-name" type="xs:string"/>
+    <xs:element name="last-name" type="xs:string"/>
+    <xs:element name="ID-number" type="xs:string"/>
+
+    <xs:element name="id" type="xs:positiveInteger"/>
+    <xs:element name="capacity" type="xs:positiveInteger"/>
+    <xs:element name="test-result" type="xs:string"/>
+
+    <!-- definition of attributes -->
+    <xs:attribute name="id" type="xs:positiveInteger"/>
+
+
+    <!-- definition of complex elements -->
+    <xs:element name="date">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="year"/>
+                <xs:element ref="month"/>
+                <xs:element ref="day"/>
+                <xs:element ref="hour"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="first-name"/>
+                <xs:element ref="last-name"/>
+                <xs:element ref="ID-number"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="test-tube">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="capacity"/>
+                <xs:element ref="test-result"/>
+                <xs:element ref="person" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="COVID-test">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="date"/>
+                <xs:element ref="test-tube" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
