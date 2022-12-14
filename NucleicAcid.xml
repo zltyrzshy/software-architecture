@@ -2,15 +2,17 @@
 <?xml-stylesheet href="NucleicAcid.xsl" type="text/xsl"?>
 
 <NucleicAcid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="NucleicAcid.xsd">
+ xsi:noNamespaceSchemaLocation="NucleicAcid.xsd" >
     <!-- 校园大筛多个通道-->
-    <Channel id = "001">
+    <Channel>
         <!-- 每个通道负责检测的Tester和辅助工作的Assistant比如扫码之类工作-->
+        <id>001</id>
         <TesterName>John Adams</TesterName>
         <Assistant>Justin Bob</Assistant>
         <!-- 每个通道会有很多检测管-->
-        <Tube id ="001">
+        <Tube>
             <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <id>001</id>
             <testres>negative</testres>
             <date>
                 <hour>12</hour>
@@ -40,8 +42,9 @@
             </participant>
         </Tube>
 
-        <Tube id ="002">
+        <Tube>
             <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <id>002</id>
             <testres>negative</testres>
             <date>
                 <hour>5</hour>
@@ -72,13 +75,15 @@
         </Tube>
     </Channel>
 
-    <Channel id = "002">
+    <Channel>
         <!-- 每个通道负责检测的Tester和辅助工作的Assistant比如扫码之类工作-->
+        <id>002</id>
         <TesterName>Crsitina Cooker</TesterName>
         <Assistant>Leo Messi</Assistant>
         <!-- 每个通道会有很多检测管-->
-        <Tube id ="001">
+        <Tube>
             <!-- testres为检测结果阳性或阴性、date为日期、participant五人混管检测-->
+            <id>001</id>
             <testres>positive</testres>
             <date>
                 <hour>02</hour>
